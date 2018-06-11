@@ -53,14 +53,16 @@ L.insert(1,'C')
 print(L) =  [['Apple', 'Google', 'Microsoft'], 'C', ['Java', 'Python', 'Ruby', 'PHP'], ['Adam', 'Bart', 'Lisa']]
 可以增加任何类型的值到数组中
 
-4 数组list (tuple)
+4 ---------------------
+数组list (tuple)
 classmates = ('Michael', 'Bob', 'Tracy') 元组     你可以正常地使用classmates[0]，classmates[-1]，但不能赋值成另外的元素
 
 t = (1)  print(t) =1  在数学中可以得到1 消除分歧则用t=(1,) 用逗号解决问题！  
 t = ('a', 'b', ['A', 'B'])     t[2][0] = 'X'   t[2][1] = 'Y'   print(t)   ('a', 'b', ['X', 'Y'])
 tuple所谓的“不变”是说，tuple的每个元素，指向永远不变   这里可以改变 数组的值 而指向未改变！
 
-5 if else
+5-----------------
+if else
 语法 if (条件)：
      缩进 执行语法
      else:
@@ -75,7 +77,8 @@ if age>18:
         print('你是中年人了！')
 else:
     print('你是未成年人！')
-6   if elif else --------------------------------- 
+6---------------------------------
+if elif else  
 if <条件判断1>:
     <执行1>
 elif <条件判断2>:
@@ -92,4 +95,49 @@ elif age >= 6:
     print('teenager')
 else:
     print('kid') 
+    
+例：height = 1.75
+weight = 80.5
+bmi = 80.5/1.75
+print(bmi)
+if bmi<18.5:
+   print('过轻')
+elif(18.5<bmi<=25):
+   print('正常')
+elif(25<bmi<=28):
+   print('过重')
+elif(28<bmi<=32):
+   print('肥胖')
+else:
+   print('严重肥胖')
+    
 
+7 -------------------
+input  input()返回的数据类型是str     int()强转 转换不了就会报错！
+8--------------------
+names = ['Michael', 'Bob', 'Tracy']
+for name in names:
+    print(name)
+    
+L = ['Bart', 'Lisa', 'Adam']
+for i in L:
+  print('Hello, '+i+'!')   
+  
+print(list(range(5)))=[0, 1, 2, 3, 4]
+break 在循环中，break语句可以提前退出循环。
+例：----
+n=1
+while n<=100:
+    if n>10:
+        break;
+    print(n);
+    n=n+1;
+print('END')
+continue上面的程序可以打印出1～10。但是，如果我们想只打印奇数，可以用continue语句跳过某些循环：
+例：----
+while n<=10:
+    n = n + 1;
+    if (n%2==0):
+        continue;
+    print(n);
+print('END')
