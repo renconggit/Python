@@ -141,3 +141,7 @@ while n<=10:
         continue;
     print(n);
 print('END')
+9-------------------
+dict 键值集合
+通过dict提供的get()方法，如果key不存在，可以返回None，或者自己指定的value
+要删除一个key，用pop(key)方法，对应的value也会从dict中删除
