@@ -145,3 +145,5 @@ print('END')
 dict 键值集合
 通过dict提供的get()方法，如果key不存在，可以返回None，或者自己指定的value
 要删除一个key，用pop(key)方法，对应的value也会从dict中删除
+set
+set和dict类似，也是一组key的集合，但不存储value。由于key不能重复，所以，在set中，没有重复的key。
