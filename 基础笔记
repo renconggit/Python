@@ -36,11 +36,29 @@ print('%.2f' % 3.1415926)
 3.14   （%.2f）保留小数点2位
 
 3--------------------------
-数组list
+数组list  append(追加元素到末尾)  insert(把元素插入到指定的位置)  pop(要删除list末尾的元素)
 # -*- coding: utf-8 -*-
 
 L = [['Apple', 'Google', 'Microsoft'],    ['Java', 'Python', 'Ruby', 'PHP'],    ['Adam', 'Bart', 'Lisa']] 注：索引以0开始
 # 打印Apple:   print(L[0][0])
 # 打印Python:  print(L[1][1])
 # 打印Lisa:    print(L[2][2])
-# 输出长度(3)     print(len(L))
+# 输出长度(3)  print(len(L)) 
+# L[-1]        表示输入该数组的最后一位！ 负数为倒数第几位的值   当索引超出了范围时，Python会报一个IndexError错误 （索引错误）
+
+insert(index,char) 插入 pop()删除最后一位 pop(1)删除第一位
+L.insert(1,['a','b','c'])
+print(L) =  [['Apple', 'Google', 'Microsoft'], ['a', 'b', 'c'], ['Java', 'Python', 'Ruby', 'PHP'], ['Adam', 'Bart', 'Lisa']] 
+L.insert(1,'C')  
+print(L) =  [['Apple', 'Google', 'Microsoft'], 'C', ['Java', 'Python', 'Ruby', 'PHP'], ['Adam', 'Bart', 'Lisa']]
+可以增加任何类型的值到数组中
+
+4 数组list (tuple)
+classmates = ('Michael', 'Bob', 'Tracy') 元组     你可以正常地使用classmates[0]，classmates[-1]，但不能赋值成另外的元素
+
+t = (1)  print(t) =1  在数学中可以得到1 消除分歧则用t=(1,) 用逗号解决问题！  
+t = ('a', 'b', ['A', 'B'])     t[2][0] = 'X'   t[2][1] = 'Y'   print(t)   ('a', 'b', ['X', 'Y'])
+tuple所谓的“不变”是说，tuple的每个元素，指向永远不变
+
+
+
