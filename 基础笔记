@@ -5,7 +5,7 @@ Python学习记录
 1.---------------
 Python提供了ord()函数获取字符的整数表示，chr()函数把编码转换为对应的字符：
 2---------------
-x = b'ABC'        b 表示bytes
+x = b'ABC'        b 表示bytes    
 常见占位符有：
 %d 表示整数 %s表示字符串   %f浮点类型      %x十六进制的       如果任意字符可用双写（xx,MM)
 %%	百分号标记 #就是输出一个%
@@ -30,3 +30,17 @@ print('%.1f%%'%r)         18.1%
 r = (85-72)/72*100
 print('%.1fhh'%r)         18.1hh
 
+print('%2d-%02d' % (3, 1))
+print('%.2f' % 3.1415926)
+ 3-01  （%2d）从第二位输出
+3.14   （%.2f）保留小数点2位
+
+3--------------------------
+数组list
+# -*- coding: utf-8 -*-
+
+L = [['Apple', 'Google', 'Microsoft'],    ['Java', 'Python', 'Ruby', 'PHP'],    ['Adam', 'Bart', 'Lisa']] 注：索引以0开始
+# 打印Apple:   print(L[0][0])
+# 打印Python:  print(L[1][1])
+# 打印Lisa:    print(L[2][2])
+# 输出长度(3)     print(len(L))
